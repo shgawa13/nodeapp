@@ -10,7 +10,7 @@ app.use(methodOverride("_method", { methods: ["POST", "GET"] }));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 // here should be the link from mongoDB
-mongoose.connect(process.env.url);
+mongoose.connect(process.env.db);
 
 const PORT = process.env.PORT || 3000;
 
