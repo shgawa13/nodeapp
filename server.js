@@ -9,7 +9,7 @@ const app = express();
 app.use(methodOverride("_method", { methods: ["POST", "GET"] }));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
-// I useed .env file to store  the link from MongoDB
+// I used .env file to store  the link from MongoDB
 // here should be the link from mongoDB
 mongoose.connect(process.env.db);
 
